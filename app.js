@@ -1,2 +1,1 @@
-alert("hello");
-alert("testing repository")
+console.log("hello");
