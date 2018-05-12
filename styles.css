@@ -40,7 +40,6 @@ hr{
 .image_stay {
 	width: 600px;
 	height: 400px;
-	float: left;
 	margin: 0 5px 0 150px;
 	transition: all 0.5s;
 }
@@ -49,7 +48,6 @@ hr{
 .image_go {
 	width: 600px;
 	height: 400px;
-	float: left;
 	
 }
 
@@ -81,11 +79,10 @@ hr{
 	font-weight: 600;
 	font-size: 24px;
 	text-align: center;
-	position: absolute;
-	top: 470px;
-	left: 355px;
-	width: 1205px;
-	height: 70px;
+	position: relative;
+	top: -370px;
+	left: 150px;
+	width: 1225px;
 	background: #3946A0;
 	padding: 15px;
 
@@ -96,11 +93,10 @@ hr{
 	font-weight: 600;
 	font-size: 24px;
 	text-align: center;
-	position: absolute;
-	top: 1000px;
-	left: 355px;
-	width: 1205px;
-	height: 70px;
+	position: relative;
+	top: -700px;
+	left: 150px;
+	width: 1225px;
 	background: #DA4557;
 	padding: 15px;
 
@@ -138,8 +134,8 @@ hr{
 }
 #go_1 {
 	position: relative;
-	top: 0;
-	left: 0;
+	top: -400px;
+	left: 775px;
 	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_2-mob.jpg);
 	background-position: top-left;
 	background-size: 130%;
@@ -155,8 +151,8 @@ hr{
 
 #go_2 {
 	position: relative;
-	top: 125px;
-	left: 0;
+	top: -730px;
+	left: 775px;
 	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/B_2.jpg);
 	background-position: center;
 	background-size: 150%;
@@ -188,9 +184,9 @@ background-size: 110%;
 
 
 #stay_2 {
-	top: 125px;
-	left: 0;
 	position: relative;
+	top: -330px;
+	left: 0;
 	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/B_1.jpg);
 	background-position: right;
 	background-size: 150%;
@@ -202,6 +198,106 @@ background-size: 110%;
 #stay_2:hover {
 background position: center;
 background-size: 120%;
+}
+
+@media (max-width: 1350px){
+
+.image_stay {
+	width: 400px;
+	height: 200px;
+	transition: all 0.5s;
+}
+
+.image_go {
+	width: 400px;
+	height: 200px;
+	
+}
+
+
+#stay_1 {
+	top: 0;
+	left: 0;
+}
+
+#go_1 {
+	top: -200px;
+	left: 575px;
+}
+
+#stay_2 {
+	top: -130px;
+	left: 0;
+}
+
+#go_2 {
+	top: -330px;
+	left: 575px;
+}
+
+.images_footer_1 {
+	top: -170px;
+	left: 150px;
+	width: 825px;
+}
+
+.images_footer_2 {
+	top: -300px;
+	left: 150px;
+	width: 825px;
+}
+
+}
+
+@media(max-width: 970px){
+
+.image_stay {
+	width: 400px;
+	height: 200px;
+	margin: 0 5px 0 50px;
+	transition: all 0.5s;
+}
+
+.image_go {
+	width: 400px;
+	height: 200px;
+	
+}
+
+
+#stay_1 {
+	top: 0;
+	left: 0;
+}
+
+#go_1 {
+	top: 25px;
+	left: 50px;
+}
+
+#stay_2 {
+	top: 120px;
+	left: 0;
+}
+
+#go_2 {
+	top: 150px;
+	left: 50px;
+}
+
+.images_footer_1 {
+	top: 50px;
+	left: 50px;
+	width: 400px;
+}
+
+.images_footer_2 {
+	top: 175px;
+	left: 50px;
+	width: 400px;
+}
+
+
 }
 
 #nintendo {
@@ -221,6 +317,7 @@ background-size: 120%;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 	border-bottom: 20px solid #232323;
 	width: 100%;
 	height: 1000px;
@@ -231,14 +328,27 @@ background-size: 120%;
 	height: 1000px;
 	position: absolute;
 }
+
+#nintendo-family {
+	width: 100%;
+	height: 1500px;
+	background: url(https://www.thequiz.com/wordpress/wp-content/uploads/2017/07/Nintendo-characters.jpg);
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
 #header-scroll {
 	width: 100%;
-	height: 850px;
+	height: 400px;
+
 }
 
 #header-bg{
 	width: 100%;
-	height: 100%;
+	height: 1000px;
 	position: absolute;
 	background-size: cover;
 	background-position: center;
@@ -262,21 +372,23 @@ background-size: 120%;
 	width: 700px;
 }
 
-#nintendo-family {
-	width: 100%;
-	height: 1000px;
-	background: url(https://www.thequiz.com/wordpress/wp-content/uploads/2017/07/Nintendo-characters.jpg);
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
 
 #nin_final_container {
 	margin: 0 auto;
-	width: 1500px;
+	max-width: 1500px;
 	padding-top: 50px;
+	height: 800px;
 
+
+}
+
+#metroid_container {
+	position: relative;
+}
+#metroidPrime_1 {
+	position: absolute;
+	top: -600px;
+	left: 680px;
 }
 
 .overlay_container {
@@ -298,3 +410,4 @@ background-size: 120%;
 #features-nintendo img{
 	margin: 40px auto;
 }
+
