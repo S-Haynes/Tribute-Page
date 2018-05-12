@@ -31,16 +31,19 @@ sliderImage();
 
 function sliderCurtain(){
 	if(indexCurtain === 0){
-		curtain.style.height = "0%"
+		curtain.style.height = "0%";
 		bgSize();
 		indexCurtain++;
 	} else if(indexCurtain === 1){
-		curtain.style.height = "100%"
+		curtain.style.height = "100%";
 		indexCurtain = 0;
-		setTimeout(sliderImage, 2000)
+		setTimeout(sliderImage, 2000);
 
 	}
 }
+
+
+setTimeout(sliderCurtain, 1000)
 
 setInterval(sliderCurtain, 4000)
 
