@@ -121,7 +121,7 @@ hr{
 #curtain {
 	width: 100%;
 	height: 100%;
-	background: #DA4557;
+	background: rgb(218,69,87);
 	z-index: 5;
 	transition: all 1s;
 }
@@ -131,6 +131,7 @@ hr{
 	font-size: 124px;
 	color: #EC5656;
 	text-shadow: 10px 10px #232323;
+
 }
 #go_1 {
 	position: relative;
@@ -306,10 +307,10 @@ background-size: 120%;
 	text-shadow: 8px 8px #232323;
 }
 
-#xbox {
-	font-size: 60px;
+#playstation {
+	font-size: 48px;
 	text-shadow: 8px 8px #232323;
-	color: #62FA89;
+	color: #09A7E9;
 }
 
 #nintendo-overlay {
@@ -354,7 +355,7 @@ background-size: 120%;
 	background-position: center;
 	background-repeat: no-repeat;
 	border-bottom: 20px solid #232323;
-	transition: all 3s;
+	transition: background-size 3s;
 }
 
 
@@ -382,13 +383,21 @@ background-size: 120%;
 
 }
 
-#metroid_container {
+#png_container {
 	position: relative;
 }
 #metroidPrime_1 {
 	position: absolute;
-	top: -600px;
-	left: 680px;
+	top: -785px;
+	left: 678px; /* 680px */
+	z-index: 1;
+}
+
+#zeldaAndLink_1{
+	position: absolute;
+	z-index: 2;
+	top: -520px;
+	left: -50px;
 }
 
 .overlay_container {
@@ -397,6 +406,7 @@ background-size: 120%;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 1px
+
 }
 
 @media (max-width: 1000px){

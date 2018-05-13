@@ -32,10 +32,12 @@ sliderImage();
 function sliderCurtain(){
 	if(indexCurtain === 0){
 		curtain.style.height = "0%";
+		curtain.style.background = "steelblue";
 		bgSize();
 		indexCurtain++;
 	} else if(indexCurtain === 1){
 		curtain.style.height = "100%";
+		curtain.style.background = "rgb(218,69,87)";
 		indexCurtain = 0;
 		setTimeout(sliderImage, 2000);
 
@@ -45,7 +47,7 @@ function sliderCurtain(){
 
 setTimeout(sliderCurtain, 1000)
 
-setInterval(sliderCurtain, 4000)
+setInterval(sliderCurtain, 3500)
 
 function bgSize(){
 	header.style.backgroundSize = "100% 100%";
