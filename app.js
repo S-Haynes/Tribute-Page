@@ -8,10 +8,10 @@ let arr = [
 			"https://2.bp.blogspot.com/-wbxJH7eFOjI/V_lDYXzFWqI/AAAAAAAADIw/m8kI6E2Dm9Ie4SG8EmUURNGIIWPVtQpkACLcB/s1600/The-legend-of-zelda-breath-of-the-wild-classic-wallpaper-1920x1080.jpg", //zelda title
 			"https://wallpapercave.com/wp/wp1913646.jpg", //zelda gameplay
 			"https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/hero/9.jpg", //zelda player
-			"https://bestscreenwallpaper.pro/wp-content/uploads/2013/11/Xbox-One-Wallpaper-Free-Xbox-One-Microsoft-Gamers-free-online-games-New-Xbox-one-bestscreenwallpaper.com-26.jpg",
+			"https://cnet3.cbsistatic.com/img/fws2Vj3CvMw6YrKXvPTrJ46TBZc=/1600x900/2016/10/20/6492fde4-41cb-483c-9015-024e43a42759/playstation-4-pro-ps4-008.jpg",
 			"https://i.ytimg.com/vi/xcaGxxImVc0/maxresdefault.jpg", // sea of thieves title
 			"http://sm.ign.com/ign_in/review/s/sea-of-thi/sea-of-thieves-review_uxtb.jpg", // sea of thieves gameplay
-			"https://edge.alluremedia.com.au/m/k/2017/11/kotaku-xbox-one-x-1.jpg",
+			"https://c.wallhere.com/photos/21/4d/video_games_DualShock_PlayStation_4_controllers_500px_DualShock_4-1297453.jpg!d",
 ]
 
 
