@@ -159,7 +159,7 @@ hr{
 }
 
 #go_2 {
-	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/B_2.jpg);
+	background: url(http://www.videogameobsession.com/videogame/nesboxes/zzAll30NESBlackBoxesInOneShot-vgo-02.jpg);
 	background-position: center;
 	background-size: 150%;
 	background-repeat: no-repeat;
@@ -190,9 +190,9 @@ height: 400px;
 
 #stay_2 {
 	
-	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/B_1.jpg);
+	background: url(https://i0.wp.com/www.geekthenews.com/wp-content/uploads/2013/01/8bitContra.jpg?resize=620%2C400);
 	background-position: right;
-	background-size: 150%;
+	background-size: 120%;
 	background-repeat: no-repeat;
 	transition: all 0.5s;
 
@@ -201,7 +201,7 @@ height: 400px;
 
 #stay_2:hover {
 background position: center;
-background-size: 120%;
+background-size: 110%;
 
 }
 
@@ -247,10 +247,16 @@ background-size: 120%;
 }
 
 #nintendo-final {
+	position: relative;
 	width: 100%;
-	height: 1400px;
-	background: #D5EBFE;
+	height: 1600px;
+	background: url(http://getwallpapers.com/wallpaper/full/3/d/6/484115.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat
+	/*background: #D5EBFE;*/
 }
+
 
 #nintendo-family {
 	width: 100%;
@@ -475,6 +481,46 @@ min-width: 100%;
 min-height: 100%;
 
 }
+#psp_container {
+	position: absolute;
+	height: 48%;
+	width: 52%;
+	top: 37%;
+	left: 24%;
+
+}
+#psp_vid_content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	
+}
+
+
+#gaming-made-easy {
+	position: relative;
+	top: -200px;
+	margin: 0 auto;
+	height: 200px;
+	max-width: 700px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#gaming-made-easy p {
+	font-size: 72px;
+	font-weight: 700;
+
+}
+#psp-view-cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
 
 .video_text1{
 	position: absolute;
@@ -547,6 +593,13 @@ min-height: 100%;
 	z-index: 2;
 }
 
+#psp_video_image {
+	position: relative;
+	bottom: -35px;
+	height:1200px;
+	width: 100%;
+}
+
 
 
 @media (max-width: 1350px){
@@ -574,6 +627,7 @@ min-height: 100%;
 	left: -150px;
 	
 }
+
 
 
 #text-container {
@@ -607,6 +661,7 @@ min-height: 100%;
 }
 
 #nintendo-final {
+
 	height: 2100px;
 }
 
