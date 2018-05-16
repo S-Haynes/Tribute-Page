@@ -1,3 +1,3 @@
 # Tribute-Page
-xbox vs. nintendo tribute page
-Inspired by both nintendo switch / xbox home pages. 
+nintendo vs. playstation tribute page
+Inspired by both nintendo switch / playstation 4 home pages. 
