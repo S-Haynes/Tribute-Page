@@ -253,10 +253,20 @@ background-size: 110%;
 	background: url(http://getwallpapers.com/wallpaper/full/3/d/6/484115.jpg);
 	background-position: bottom;
 	background-size: cover;
-	background-repeat: no-repeat
+	background-repeat: repeat;
+	animation: slide-background 200s linear infinite;
 	/*background: #D5EBFE;*/
 }
 
+@keyframes slide-background {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -10000px;
+	}
+}
 
 #nintendo-family {
 	width: 100%;
