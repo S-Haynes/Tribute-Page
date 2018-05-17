@@ -1,5 +1,9 @@
 let header = document.querySelector('#header-bg');
 let curtain = document.querySelector('#curtain');
+let psp = document.querySelector("#psp_vid_content");
+let phero = document.querySelectorAll(".p-hero");
+let nhero = document.querySelectorAll(".n-hero");
+let indexHero = 0;
 let indexImage = 0;
 let indexCurtain = 0;
 
@@ -52,3 +56,31 @@ setInterval(sliderCurtain, 3500)
 function bgSize(){
 	header.style.backgroundSize = "100% 100%";
 }
+
+
+function imageSwitch(){
+	if(indexHero === phero.length){
+		indexHero = 0;
+	} 
+		
+		for(var i = 0; i < phero.length; i++){
+		// phero[i].classList.add('hidden');
+		// nhero[i].classList.add('hidden');
+		$(".p-hero:eq(" + i + ")").fadeOut(1500);
+		$(".n-hero:eq(" + i + ")").fadeOut(1500);
+	}
+
+		setTimeout(function(){
+		$(".p-hero:eq(" + indexHero + ")").fadeIn(1500);
+		$(".n-hero:eq(" + indexHero + ")").fadeIn(1500);
+		// phero[indexHero].classList.remove('hidden');
+		// nhero[indexHero].classList.remove('hidden');
+		return indexHero++
+		}, 1500)
+		
+}
+
+imageSwitch();
+
+
+setInterval(imageSwitch, 7000);

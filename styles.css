@@ -254,7 +254,7 @@ background-size: 110%;
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: repeat;
-	animation: slide-background 200s linear infinite;
+	animation: slide-background 20000s linear infinite;
 	/*background: #D5EBFE;*/
 }
 
@@ -264,7 +264,7 @@ background-size: 110%;
 	}
 
 	100% {
-		background-position: -10000px;
+		background-position: -1000000px;
 	}
 }
 
@@ -610,6 +610,229 @@ min-height: 100%;
 	width: 100%;
 }
 
+#console-clash {
+	display: flex;
+	position: relative;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/0f0aae2ba101330bd8a2ce550be78e87-full.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000px;
+	width: 100%;
+	align-items: stretch;
+	flex-wrap: nowrap;
+	z-index: 1;
+	
+}
+
+#clash-overlay {
+	position: absolute;
+	background: black;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0.9;
+}
+
+#bg-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+#scrolling-bg {
+	position: relative;
+	top: 40%;
+	width: 100%;
+	height: 50%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/22800a8a310818b763be60c09a3b67bd-full.png);
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	animation: slide-background 20000s linear infinite;
+	z-index: -5;
+}
+
+#pick-your-side {
+	font-size: 72px;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	letter-spacing: 2px;
+	position: relative;
+	flex: 1;
+	margin: auto;
+	z-index: 3;
+
+}
+
+
+#choice-playstation {
+	display: flex;
+	flex-direction: column;
+	flex: 2.5;
+	padding-top: 20px;
+	z-index: 10;
+	
+}
+
+#choice-nintendo {
+	z-index: 10;
+	display: flex;
+	flex: 2.5;
+	flex-direction: column;
+	margin:;
+}
+
+
+
+
+#choice-playstation .end-logo {
+	margin: auto;
+	flex: 1;
+	width: 50%;
+}
+
+#playstation_hero {
+	display: flex;
+	flex: 1;
+	
+}
+
+
+#choice-nintendo .end-logo {
+	margin: auto;
+	flex: 1;
+	width: 50%;
+}
+
+#nintendo_hero {
+	display: flex;
+	flex: 1;
+}
+
+div .n-hero {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+
+#link {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/2dfbc8ca859e821fcb264e7a667374e6-full.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 140% 100%;
+}
+#pikachu {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/4ea391382a3c6f83291ed0c3b7b16edb-full.png);
+	background-repeat: no-repeat;
+	background-position: bottom bottom;
+	background-size: 135% 100%;
+}
+#mario {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/95cf667167357fb85c0454c1146f695a-full.png);
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-size: 130% 100%;
+}
+#bowser{
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/2b6367c6565eccda8d3660fb82ad7214-full.png);
+	background-repeat: no-repeat;
+	background-position: -10% 100px;
+	background-size: 180% 110%;
+}
+#samus {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://supernintendo.surge.sh/img/games/samus.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div .p-hero {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+#squall {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/d57fe98f64a42fd1ebfc399c7011a236-full.png);
+	background-repeat: no-repeat;
+	background-position: 0 100px;
+	background-size: 170% 100%;
+}
+
+#mugen {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/43bebb1e43f88ea8c67832eb64198dc6-full.png);
+/*	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/3f12f6c06bd3113712eb3acd131ad5c6-full.png);*/
+	background-repeat: no-repeat;
+	background-position: 70% 100px;
+	background-size: 100% 100%;
+}
+
+#titanfall {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/c16c207493624bd83f10cbb4594fc940-full.png);
+	background-repeat: no-repeat;
+	background-position: 70% 100px;
+	background-size: 100% 100%;
+}
+
+#kratos {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/4ebe241807b3b713a8119197d3cc474e-full.png);
+	background-repeat: no-repeat;
+	background-position: 0 -180px;
+	background-size: 100% 120%;
+}
+
+#crash-bandicoot {
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/49f0d415f5dbcfd58e114798ff386caa-full.png);
+/*	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/3e47572c546157897bdaab2df0cc4af3-full.png);*/
+	background-repeat: no-repeat;
+	background-position: 0 350px;
+	background-size: 100% 60%;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
 
 
 @media (max-width: 1350px){
@@ -666,6 +889,10 @@ min-height: 100%;
 }
 
 @media(max-width: 1000px){
+
+#choice-playstation {
+	display: none;
+}	
 #features-nintendo {
 	height: 2350px;
 }
