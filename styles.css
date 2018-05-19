@@ -26,7 +26,14 @@ h1 {
 }
 
 hr{
-	margin: 20px;
+	align-self: center;
+	flex:1;
+	color: #fff;
+	background-color: #fff;
+	border: none;
+	height: 1px;
+
+	min-width: 100%;  
 }
 
 .header-container {
@@ -68,10 +75,9 @@ div #nintendo-img1 , div #nintendo-img6 {
 
 .nintendo-text {
 	flex: 1;
-	min-width: 100%;
+	width: 100%;
 	color: white;
 	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
-	margin: 0 0;
 }
 
 .design-text {
@@ -348,7 +354,7 @@ background-size: 110% 100%;
 @media(max-width: 860px){
 
 #nintendo-final-bg {
-	padding-top: 3px;
+	padding-top: 0px;
 }
 .images_footer_1 {
 	max-width: 600px;
@@ -363,9 +369,10 @@ background-size: 110% 100%;
 #zeldaAndLink_1{
 	position: absolute;
 	z-index: 2;
-	top: -315px;
-	left: 0px;
-	max-width: 430px;
+	top: -385px;
+	left: 5px;
+	max-width: 380px;
+	height: 430px;
 }
 }
 
@@ -514,12 +521,17 @@ background-size: 110% 100%;
   z-index: 10;
 }
 
+
+
 #png_container_1 img {
 	position: absolute;
 	bottom: -55px;
 	right: 0;
+	top: 100px;
 	width: 100%;
-	height: 100%;
+	height: 120%;
+	max-width: 600px;
+	max-height: 600px;
 }
 
 .wrapper{
@@ -633,7 +645,7 @@ min-height: 100%;
 }
 
 #gaming-made-easy p {
-	font-size: 72px;
+	font-size: calc(48px + (72 - 48) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 700;
 
 }
@@ -966,7 +978,8 @@ div .p-hero {
 }
 
 #ps4_console_img {
-	left: 0px;
+	left: -0px;
+	max-width: 350px ;
 }
 
 }
