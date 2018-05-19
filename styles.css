@@ -4,6 +4,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,7 @@ html {
 
 h1 {
 	color: white;
-	font-size: 72px;
+	font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1600 - 300)));
 	text-transform: uppercase;
 	letter-spacing: 1px
 	font-weight: 800;
@@ -28,41 +29,6 @@ hr{
 	margin: 20px;
 }
 
-
-@media (min-width: 1200px){
-.container {
-	max-width: 1720px;
-}
-
-
-}
-
-.image_stay {
-	width: 600px;
-	height: 400px; 
-	transition: all 0.5s;
-	margin: 10px 10px;
-}
-
-
-.image_go {
-	width: 600px;
-	height: 400px;
-	margin: 10px 10px;
-}
-
-.bg-dark {
-	background: #232323 !important;
-}
-
-
-.design-text {
-	background: #EC5656;
-	width: 100%;
-	font-size: 36px;
-	color: white;
-	padding: 30px;
-}
 .header-container {
 	position: absolute;
 	top: 30%;
@@ -73,6 +39,158 @@ hr{
 	opacity: 0.7;
 }
 
+/*section-3*/
+.features-wrapper {
+	position: relative;
+	background: #232323;
+	text-align: center;
+	padding: 30px 10px;
+	width: 100%;
+}
+
+.features-wrapper div{
+	flex: 1;
+	max-height: 350px;
+	min-height: 300px;
+	width: 90%;
+	margin: 10px;
+	border: 2px solid black;
+
+}
+
+.features-wrapper div:nth-of-type(1) {
+	border: none;
+}
+
+div #nintendo-img1 , div #nintendo-img6 {
+	flex: 2;
+}
+
+.nintendo-text {
+	flex: 1;
+	min-width: 100%;
+	color: white;
+	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+	margin: 0 0;
+}
+
+.design-text {
+	width: 100%;
+	background: #EC5656;
+	font-size: calc(16px + (36 - 16) * ((100vw - 300px) / (1600 - 300)));;
+	color: white;
+	padding: 30px;
+	margin: 0 10px 10px 10px;
+
+}
+
+#switch-vid-content {
+	position: relative;
+	top: 2%;
+	left: 0;
+	width: 69%;
+	height: 98%;
+}
+
+#nintendo-img1 {
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/0a393ffc5fdf0a32ae4a1cd0356a818f-full.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	
+}
+
+#nintendo-img2 {
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/97c0000920364c28e7b5200ed2d22774-full.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+#nintendo-img3 {
+	align-self: flex-end;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/a87a0ef79a4912bab73951dd900f6f36-full.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+#nintendo-img4 {
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/d8521d9a20c6a9305bc1276e02caedbb-full.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+#nintendo-img5 {
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/e4201fec6ac72af33a5d25113dee3677-full.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+#nintendo-img6 {
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/3ae5cd835824e31083ef18b616878023-full.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+@media(max-width: 860px){
+.design-text {
+	width: 90%;
+}
+
+#switch-vid-content {
+	top: 5px;
+	height: 300px;
+}
+}
+
+@media(min-width: 860px){
+
+.features-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: stretch;
+	}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 20px;
+	background: #232323;
+}
+}
+/*section 3*/
+/*BEGIN SECTION 5*/
+
+.wrapper-container .features-wrapper{
+	background: rgba(255, 255, 255, 0);
+
+}
+
+.wrapper-container .features-wrapper div{
+	flex: 1;
+	max-width: 600px;
+	max-height: 500px;
+	min-height: 400px;
+	width: 90%;
+	margin: 10px;
+	border: 2px solid black;
+	
+}
+
+.wrapper-container {
+	max-width: 1000px;
+	margin: 0 auto;
+
+}
 .images_footer_1 {
 	color: white;
 	font-weight: 600;
@@ -80,7 +198,8 @@ hr{
 	text-align: center;
 	background: #3946A0;
 	padding: 15px;
-	margin: 0 -10px 0 10px;
+	margin: 0 10px 0 10px;
+	width: 100%;
 }
 
 .images_footer_2 {
@@ -90,19 +209,167 @@ hr{
 	text-align: center;
 	background: #DA4557;
 	padding: 15px;
-	margin: 0 -10px 0 10px;
+	margin: 0 10px 0 10px;
+	width: 100%;
+	z-index: 3;
 }
 
-.nintendo-text {
-	color: #353535;
-	font-size: 48px;
+#go_1 {
+	flex: 1;
+	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_2-mob.jpg);
+	background-position: top left;
+	background-size: 130% 110%;
+	background-repeat: no-repeat;
+	transition: all 0.5s;
 }
 
-.row {
-	margin-left: 30px;
-	margin-right: 30px;
+#go_1:hover{
+	background position: center;
+	background-size: 110% 100%;
 }
 
+#go_2 {
+	background: url(http://www.videogameobsession.com/videogame/nesboxes/zzAll30NESBlackBoxesInOneShot-vgo-02.jpg);
+	background-position: left;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition: all 2s;
+	
+}
+
+#go_2:hover {
+	background position: center;
+	background-size: 190% 190%;
+
+}
+
+#stay_1 {
+	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_1.jpg);
+	background-position: top left;
+	background-size: 130% 110%;
+	background-repeat: no-repeat;
+	transition: all 0.5s;
+}
+
+#stay_1:hover{
+background position: center;
+background-size: 110% 100%;
+
+}
+
+#stay_2 {
+	
+	background: url(https://i0.wp.com/www.geekthenews.com/wp-content/uploads/2013/01/8bitContra.jpg?resize=620%2C400);
+	background-position: right;
+	background-size: 120% 110%;
+	background-repeat: no-repeat;
+	transition: all 0.5s;	
+}
+
+#stay_2:hover {
+background position: center;
+background-size: 110% 100%;
+
+}
+
+#nintendo-final-bg {
+	z-index: 1;
+	padding-top: 13px;
+	padding-bottom: 350px;
+	background: url(http://getwallpapers.com/wallpaper/full/3/d/6/484115.jpg);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: repeat;
+	animation: slide-background 20000s linear infinite;
+}
+
+#zeldaAndLink_1{
+	position: absolute;
+	z-index: 2;
+	top: -390px;
+	left: 350px;
+	max-width: 533px;
+}
+
+#nintendo-controller {
+	z-index: 2;
+	position: absolute;
+	top: 300px;
+	left: -520px;
+	transform: rotate(30deg);
+	border: none;
+}
+
+
+#nintendo-wire {
+	position: absolute;
+	z-index: 2;
+	top: 1040px;
+	left: -500px;
+	transform: rotate(2deg);
+	border: none;
+	
+}
+
+@keyframes slide-background {
+	0% {
+		background-position: 0;
+	}
+
+	100% {
+		background-position: -1000000px;
+	}
+}
+
+@media(max-width: 1400px){
+	#nintendo-controller{
+		top: 400px;
+		left: -420px;
+		transform: rotate(50deg);
+	}
+
+	#nintendo-controller img {
+		width: 330px;
+		height: 378px;
+	}
+}
+
+@media(max-width: 1150px){
+
+	#nintendo-controller {
+		display: none;
+	}
+
+	#nintendo-wire {
+		display: none;
+	}	
+}
+
+@media(max-width: 860px){
+
+#nintendo-final-bg {
+	padding-top: 3px;
+}
+.images_footer_1 {
+	max-width: 600px;
+	width: 90%;
+}
+
+.images_footer_2 {
+	max-width: 600px;
+	width: 90%;
+}
+
+#zeldaAndLink_1{
+	position: absolute;
+	z-index: 2;
+	top: -315px;
+	left: 0px;
+	max-width: 430px;
+}
+}
+
+/*END SECTION 5*/
 
 #logo_img {
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/14/a615878e2203c348018afa1170026579-full.png);
@@ -115,8 +382,6 @@ hr{
 }
 
 #play_font {
-/*	font-size: 124px;*/
-	/*color: #7CF7F3;*/
 	font-size: 72px;
 	color: #232323;
 	text-shadow: 4px 4px #474747;
@@ -141,81 +406,17 @@ hr{
 	font-size: 124px;
 	color: #EC5656;
 	text-shadow: 10px 10px #232323;
-
 }
-#go_1 {
-	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_2-mob.jpg);
-	background-position: top-left;
-	background-size: 130%;
-	background-repeat: no-repeat;
-	transition: all 0.5s;
-}
-
-#go_1:hover{
-	background position: center;
-	background-size: 110%;
-	height: 400px;
-
-}
-
-#go_2 {
-	background: url(http://www.videogameobsession.com/videogame/nesboxes/zzAll30NESBlackBoxesInOneShot-vgo-02.jpg);
-	background-position: center;
-	background-size: 150%;
-	background-repeat: no-repeat;
-	transition: all 0.5s;
-	
-}
-
-#go_2:hover {
-	background position: center;
-	background-size: 110%;
-	height: 400px;
-}
-
-#stay_1 {
-	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_1.jpg);
-	background-position: top-left;
-	background-size: 130%;
-	background-repeat: no-repeat;
-	transition: all 0.5s;
-}
-
-#stay_1:hover{
-background position: center;
-background-size: 110%;
-height: 400px;
-}
-
-
-#stay_2 {
-	
-	background: url(https://i0.wp.com/www.geekthenews.com/wp-content/uploads/2013/01/8bitContra.jpg?resize=620%2C400);
-	background-position: right;
-	background-size: 120%;
-	background-repeat: no-repeat;
-	transition: all 0.5s;
-
-	
-}
-
-#stay_2:hover {
-background position: center;
-background-size: 110%;
-
-}
-
 
 #nintendo {
-	font-size: 48px;
+	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
 	color: #EC5656;
 	text-shadow: 8px 8px #232323;
 }
 
 
-
 #playstation {
-	font-size: 48px;
+	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
 	text-shadow: 8px 8px #232323;
 	color: #09A7E9;
 }
@@ -246,43 +447,20 @@ background-size: 110%;
 	margin-top: 100px;
 }
 
-#nintendo-final {
-	position: relative;
-	width: 100%;
-	height: 1600px;
-	background: url(http://getwallpapers.com/wallpaper/full/3/d/6/484115.jpg);
-	background-position: bottom;
-	background-size: cover;
-	background-repeat: repeat;
-	animation: slide-background 20000s linear infinite;
-	/*background: #D5EBFE;*/
-}
-
-@keyframes slide-background {
-	0% {
-		background-position: 0;
-	}
-
-	100% {
-		background-position: -1000000px;
-	}
-}
 
 #nintendo-family {
 	width: 100%;
 	height: 1500px;
-	background: url(https://www.thequiz.com/wordpress/wp-content/uploads/2017/07/Nintendo-characters.jpg);
+	background: url(http://www.vgu.tv/wp-content/uploads/2012/02/Super-Mario-3D-Land-Wallpaper.jpg);
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
 #header-scroll {
 	width: 100%;
 	height: 400px;
-
 }
 
 #header-bg{
@@ -296,51 +474,11 @@ background-size: 110%;
 	transition: background-size 3s;
 }
 
-
-
-#features-nintendo {
-	text-align: center;
-	height: 900px;
-	border-bottom: 20px solid #232323;
-	border-top: 20px solid #232323;
-}
 #nintendo-overlay .container{
 	position: relative;
 	top: 20%;
 	width: 700px;
 }
-
-#nintendo-controller {
-	z-index: 2;
-	position: absolute;
-	top: 300px;
-	left: -500px;
-	transform: rotate(30deg);
-}
-
-
-#nintendo-controller img:hover{
-	transform: rotate(40deg) translateX(10%);
-	transition: all 0.5s;
-}
-
-#nintendo-wire {
-	position: absolute;
-	z-index: 2;
-	top: 940px;
-	left: -500px;
-	transform: rotate(2deg);
-	
-}
-
-#nin_final_container {
-	position: relative;
-	margin: 0 auto;
-	max-width: 1300px;
-	padding-top: 50px;
-	height: 930px;
-}
-
 
 #png_container {
 	position: relative;
@@ -353,12 +491,6 @@ background-size: 110%;
 	z-index: 1;
 }
 
-#zeldaAndLink_1{
-	position: absolute;
-	z-index: 2;
-	top: -520px;
-	left: -50px;
-}
 
 .overlay_container {
 	font-family: Teko;
@@ -366,11 +498,6 @@ background-size: 110%;
 	font-weight: 800;
 	text-transform: uppercase;
 	letter-spacing: 1px
-
-}
-
-#features-nintendo img{
-	margin: 40px auto;
 }
 
 #png_container_1 {
@@ -385,7 +512,6 @@ background-size: 110%;
   padding: 0 1em;
   background: rgba(0, 0, 0, 0);
   z-index: 10;
- 
 }
 
 #png_container_1 img {
@@ -395,27 +521,16 @@ background-size: 110%;
 	width: 100%;
 	height: 100%;
 }
-.wrapper {
 
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.wrapper{
 	width: 100%;
-	height: 100px;
-
+	padding: 20px;
+	background: #232323;
 }
 
 .wrapper #logo_img {
 	flex: 1 0 40%;
 	margin-left: 40px;
-}
-
-#playstation-intro {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background: #232323;
-	padding: 20px;
 }
 
 
@@ -428,7 +543,7 @@ background-size: 110%;
 	border: 3px solid black;
 	height: 50vh;
 	margin-top: 20px;
-	margin-left: 10px;
+	margin-left: 20px;
 	
 }
 
@@ -438,10 +553,9 @@ background-size: 110%;
 }
 
 #playstation_img2 {
-	flex: 0 1 40%;
+	flex: 1 1 40%;
 	height: 40vh;
-	width: 30vw;
-	margin-left: 40px;
+	margin-left: 20px;
 	margin-top:20px;
 	border: 3px solid black;
 }
@@ -481,7 +595,7 @@ background-size: 110%;
 #playstation-video {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: 1000px;
 	background: white;
 	overflow: hidden;
 }
@@ -523,7 +637,7 @@ min-height: 100%;
 	font-weight: 700;
 
 }
-#psp-view-cover {
+.video-click-cover {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -547,22 +661,23 @@ min-height: 100%;
 	position: absolute;
 	top: 25%;
 	left: 45%;
-	font-size: 48px;
 	font-weight: 700;
 	color: white;
 	z-index: 500;
 	letter-spacing: 2px;
 	text-align: left;
+	margin-left: -25px;
+
 }
 
 .video_slogan {
 	line-height: 1.0;
-	font-size: 72px;
+	font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #video_slogan2 {
 	line-height: 1.0;
-	font-size: 124px;
+	font-size: calc(36px + (124 - 36) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .container #ps4 {
@@ -570,9 +685,6 @@ min-height: 100%;
 	height: 50px;
 }
 
-.video_text2 .container {
-	margin-right: 20%;
-}
 
 #text-container{
 	position: relative;
@@ -688,9 +800,6 @@ min-height: 100%;
 	margin:;
 }
 
-
-
-
 #choice-playstation .end-logo {
 	margin: auto;
 	flex: 1;
@@ -790,7 +899,6 @@ div .p-hero {
 	width: 100%;
 	height: 100%;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/43bebb1e43f88ea8c67832eb64198dc6-full.png);
-/*	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/3f12f6c06bd3113712eb3acd131ad5c6-full.png);*/
 	background-repeat: no-repeat;
 	background-position: 70% 100px;
 	background-size: 100% 100%;
@@ -827,13 +935,9 @@ div .p-hero {
 	background-size: 100% 60%;
 }
 
-
 .hidden {
 	display: none;
 }
-
-
-
 
 @media (max-width: 1350px){
 
@@ -846,46 +950,9 @@ div .p-hero {
 	z-index: 2;
 }
 
-.video_slogan {
-	line-height: 1.0;
-	font-size: 32px;
-}
-
-#video_slogan2 {
-	line-height: 1.0;
-	font-size: 70px;
-}
-#nintendo-controller{
-	top: 450px;
-	left: -150px;
-	
-}
-
-
-
 #text-container {
 	font-size: 24px;
 }
-
-#nintendo-controller{
-	transform: rotate(40deg);
-}
-
-#nintendo-controller img {
-	height: 350px;
-	width: 350px;
-}
-
-#nintendo-wire {
-	top: 1050px;
-	left: -100px;
-}
-
-#nintendo-wire img {
-	width: 400px;
-}
-
-
 }
 
 @media(max-width: 1000px){
@@ -893,75 +960,13 @@ div .p-hero {
 #choice-playstation {
 	display: none;
 }	
-#features-nintendo {
-	height: 2350px;
-}
-
-#nintendo-final {
-
-	height: 2100px;
-}
-
-.img-fluid {
-	max-width: none;
-}
-
 
 #png_container_1 img {
 	display: none;
 }
 
-#nintendo-controller{
-	top: 1300px;
-	left: -270px;
-	
+#ps4_console_img {
+	left: 0px;
 }
 
-#nintendo-controller{
-	transform: rotate(40deg);
 }
-
-#nintendo-controller img {
-	height: 400px;
-	width: 400px;
-}
-
-#nintendo-wire {
-	top: 1870px;
-	left: -240px;
-}
-
-#nintendo-wire img {
-	width: 400px;
-}
-
-#playstation_img1 {
-	flex: 0 1 100%;
-	margin-left: 0px;
-}
-#playstation_img2 {
-	flex: 0 1 100%;
-	margin-left: 0px;
-}
-
-#playstation_img3 {
-	flex: 0 1 100%;
-	margin-left: 0px;
-}
-
-#playstation_img4 {
-	flex: 0 1 100%;
-	margin-left: 0px;
-}
-
-#playstation-intro {
-	height: 1500px;
-}
-}
-
-@media(max-width: 991px){
-	#nin_final_container {
-	width: 690px;
-}
-}
-

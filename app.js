@@ -66,17 +66,16 @@ function imageSwitch(){
 		for(var i = 0; i < phero.length; i++){
 		// phero[i].classList.add('hidden');
 		// nhero[i].classList.add('hidden');
-		$(".p-hero:eq(" + i + ")").fadeOut(1500);
-		$(".n-hero:eq(" + i + ")").fadeOut(1500);
+		$(".p-hero:eq(" + i + ")").hide();
+		$(".n-hero:eq(" + i + ")").hide();
 	}
 
-		setTimeout(function(){
-		$(".p-hero:eq(" + indexHero + ")").fadeIn(1500);
-		$(".n-hero:eq(" + indexHero + ")").fadeIn(1500);
+		$(".p-hero:eq(" + indexHero + ")").fadeIn(1000);
+		$(".n-hero:eq(" + indexHero + ")").fadeIn(1000);
 		// phero[indexHero].classList.remove('hidden');
 		// nhero[indexHero].classList.remove('hidden');
 		return indexHero++
-		}, 1500)
+		
 		
 }
 
