@@ -61,7 +61,8 @@ hr{
 	min-height: 300px;
 	width: 90%;
 	margin: 10px;
-	border: 2px solid black;
+	
+
 
 }
 
@@ -107,39 +108,211 @@ div #nintendo-img1 , div #nintendo-img6 {
 }
 
 #nintendo-img2 {
+	position: relative;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/97c0000920364c28e7b5200ed2d22774-full.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	transition: width 2s ease-in-out;
+	z-index: 1;
+}
+
+#nintendo-img2-1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/a69d74a15e0725d5a73c1dba35481420-full.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 3;
+	border: none;
+	margin-bottom: 10px;
+	
+}
+
+#nintendo-img2-2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/a87a0ef79a4912bab73951dd900f6f36-full.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 2;
+	border: none;
+	
 }
 
 #nintendo-img3 {
+	position: relative;
 	align-self: flex-end;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/a87a0ef79a4912bab73951dd900f6f36-full.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	transition: width 2s ease-in-out;
+	z-index: 1;
 }
 
+#nintendo-img3-1 {
+	position: absolute;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/b5e9baaff7040004622a7f216d95a351-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 3;
+}
+
+#nintendo-img3-2{
+	position: absolute;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/c0a56fc5bea43dafb62fde6f1e8a0c1a-full.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 2;
+}
 #nintendo-img4 {
+	position: relative;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/d8521d9a20c6a9305bc1276e02caedbb-full.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	z-index: 1;
 }
 
+#nintendo-img4-1 {
+	position: absolute;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/d53dbc4e8b396ecd0ca164e5ba7a1036-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 3;
+}
+#nintendo-img4-2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/d007c41646918e92f219f79dca9e53c8-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 2;
+}
+
+
 #nintendo-img5 {
+	position: relative;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/e4201fec6ac72af33a5d25113dee3677-full.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	transition: width 2s ease-in-out;
+	z-index: 1;
 }
 
+#nintendo-img5-1 {
+	position: absolute;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/a69711dc492e1dc3bfd73c3acc1a95b7-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 3;
+}
+
+#nintendo-img5-2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/09311441ead1d47543e299ba9d17cf80-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 2;
+}
+
+
 #nintendo-img6 {
+	position: relative;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/3ae5cd835824e31083ef18b616878023-full.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-position: center;
+	z-index: 1;
+}
+
+#nintendo-img6-1 {
+	position: absolute;
+	flex: 1;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/4948edda1fe4da546c5d85bb4f4fd2a9-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 3;
+}
+#nintendo-img6-2{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/20/81a1a788a6b6c2bf3606ba676801d57b-full.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	z-index: 100;
+	margin: 0 ;
+	padding: 0;
+	transition: width 2s ease-in-out;
+	z-index: 2;
 }
 
 @media(max-width: 860px){
@@ -203,7 +376,7 @@ div #nintendo-img1 , div #nintendo-img6 {
 	font-size: 24px;
 	text-align: center;
 	background: #3946A0;
-	padding: 15px;
+	padding: 20px;
 	margin: 0 10px 0 10px;
 	width: 100%;
 }
@@ -214,67 +387,61 @@ div #nintendo-img1 , div #nintendo-img6 {
 	font-size: 24px;
 	text-align: center;
 	background: #DA4557;
-	padding: 15px;
+	padding: 20px;
 	margin: 0 10px 0 10px;
 	width: 100%;
 	z-index: 3;
 }
 
 #go_1 {
-	flex: 1;
 	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_2-mob.jpg);
-	background-position: top left;
-	background-size: 130% 110%;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all 0.5s;
+	transition: flex 0.8s linear;
 }
 
 #go_1:hover{
-	background position: center;
-	background-size: 110% 100%;
+	flex: 3;
 }
 
 #go_2 {
 	background: url(http://www.videogameobsession.com/videogame/nesboxes/zzAll30NESBlackBoxesInOneShot-vgo-02.jpg);
-	background-position: left;
-	background-size: 100% 100%;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all 2s;
+	transition: flex 0.8s linear;
+	
 	
 }
 
 #go_2:hover {
-	background position: center;
-	background-size: 190% 190%;
-
+	flex: 3;
 }
 
 #stay_1 {
 	background: url(https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/A_1.jpg);
-	background-position: top left;
-	background-size: 130% 110%;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all 0.5s;
+	transition: flex 0.8s linear;
 }
 
 #stay_1:hover{
-background position: center;
-background-size: 110% 100%;
-
+	flex: 3;
 }
 
 #stay_2 {
 	
 	background: url(https://i0.wp.com/www.geekthenews.com/wp-content/uploads/2013/01/8bitContra.jpg?resize=620%2C400);
-	background-position: right;
-	background-size: 120% 110%;
+	background-position: center;
+	background-size: cover;
 	background-repeat: no-repeat;
-	transition: all 0.5s;	
+	transition: flex 0.8s linear;
 }
 
 #stay_2:hover {
-background position: center;
-background-size: 110% 100%;
+flex: 3;
 
 }
 
@@ -310,7 +477,7 @@ background-size: 110% 100%;
 #nintendo-wire {
 	position: absolute;
 	z-index: 2;
-	top: 1040px;
+	top: 1170px;
 	left: -500px;
 	transform: rotate(2deg);
 	border: none;
@@ -371,7 +538,7 @@ background-size: 110% 100%;
 	z-index: 2;
 	top: -385px;
 	left: 5px;
-	max-width: 380px;
+	max-width: 330px;
 	height: 430px;
 }
 }
@@ -848,10 +1015,11 @@ div .n-hero {
 	flex: 1;
 	width: 100%;
 	height: 100%;
-	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/2dfbc8ca859e821fcb264e7a667374e6-full.png);
+	background: url(https://cdn1.imggmi.com/uploads/2018/5/19/61be67d1a366433fb94ed9824bc1480f-full.png);
+/*	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/2dfbc8ca859e821fcb264e7a667374e6-full.png);*/
 	background-repeat: no-repeat;
-	background-position: bottom left;
-	background-size: 140% 100%;
+	background-position: 0px bottom;
+	background-size: 190% 90%;
 }
 #pikachu {
 	flex: 1;
@@ -979,7 +1147,7 @@ div .p-hero {
 
 #ps4_console_img {
 	left: -0px;
-	max-width: 350px ;
+	max-width: 335px ;
 }
 
 }

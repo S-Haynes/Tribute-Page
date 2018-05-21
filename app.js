@@ -3,9 +3,26 @@ let curtain = document.querySelector('#curtain');
 let psp = document.querySelector("#psp_vid_content");
 let phero = document.querySelectorAll(".p-hero");
 let nhero = document.querySelectorAll(".n-hero");
+let nintendo_img2 = document.querySelector('#nintendo-img2');
+let nintendo_img2_1 = document.querySelector('#nintendo-img2-1');
+let nintendo_img2_2 = document.querySelector('#nintendo-img2-2');
+let nintendo_img3 = document.querySelector('#nintendo-img3');
+let nintendo_img3_1 = document.querySelector('#nintendo-img3-1');
+let nintendo_img3_2 = document.querySelector('#nintendo-img3-2');
+let nintendo_img4 = document.querySelector('#nintendo-img4');
+let nintendo_img4_1 = document.querySelector('#nintendo-img4-1');
+let nintendo_img4_2 = document.querySelector('#nintendo-img4-2');
+let nintendo_img5 = document.querySelector('#nintendo-img5');
+let nintendo_img5_1 = document.querySelector('#nintendo-img5-1');
+let nintendo_img5_2 = document.querySelector('#nintendo-img5-2');
+let nintendo_img6 = document.querySelector('#nintendo-img6');
+let nintendo_img6_1 = document.querySelector('#nintendo-img6-1');
+let nintendo_img6_2 = document.querySelector('#nintendo-img6-2');
+let indexSlide = 0;
 let indexHero = 0;
 let indexImage = 0;
 let indexCurtain = 0;
+
 
 let arr = [	
 			"https://www.nintendo.com/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/home/hero/1.jpg",
@@ -83,3 +100,68 @@ imageSwitch();
 
 
 setInterval(imageSwitch, 7000);
+
+
+function imageSlide(){
+
+	if(indexSlide === 0){
+	nintendo_img2_1.style.width = "0%";
+	nintendo_img3_1.style.width = "0%";
+	nintendo_img4_1.style.width = "0%";
+	nintendo_img5_1.style.width = "0%";
+	nintendo_img6_1.style.width = "0%";
+
+	setTimeout(function(){
+		nintendo_img2_1.style.width = "100%";
+		nintendo_img3_1.style.width = "100%";
+		nintendo_img4_1.style.width = "100%";
+		nintendo_img5_1.style.width = "100%";
+		nintendo_img6_1.style.width = "100%";
+		nintendo_img2_1.style.zIndex = "-1";
+		nintendo_img3_1.style.zIndex = "-1";
+		nintendo_img4_1.style.zIndex = "-1";
+		nintendo_img5_1.style.zIndex = "-1";
+		nintendo_img6_1.style.zIndex = "-1";
+		nintendo_img2_2.style.zIndex = "1";
+		nintendo_img3_2.style.zIndex = "1";
+		nintendo_img4_2.style.zIndex = "1";
+		nintendo_img5_2.style.zIndex = "1";
+		nintendo_img6_2.style.zIndex = "1";
+	
+	}, 3000)
+	}
+
+	if(indexSlide === 1){
+	// nintendo_img2_1.style.backgroundSize = "125.6% 100%";
+	nintendo_img2_2.style.width = "0%";
+	nintendo_img3_2.style.width = "0%";
+	nintendo_img4_2.style.width = "0%";
+	nintendo_img5_2.style.width = "0%";
+	nintendo_img6_2.style.width = "0%";
+	setTimeout(function(){
+		nintendo_img2_2.style.zIndex = "-1";
+		nintendo_img3_2.style.zIndex = "-1";
+		nintendo_img4_2.style.zIndex = "-1";
+		nintendo_img5_2.style.zIndex = "-1";
+		nintendo_img6_2.style.zIndex = "-1";
+		nintendo_img2_2.style.width = "100%";
+		nintendo_img3_2.style.width = "100%";
+		nintendo_img4_2.style.width = "100%";
+		nintendo_img5_2.style.width = "100%";
+		nintendo_img6_2.style.width = "100%";
+		nintendo_img2_1.style.zIndex = "1";
+		nintendo_img3_1.style.zIndex = "1";
+		nintendo_img4_1.style.zIndex = "1";
+		nintendo_img5_1.style.zIndex = "1";
+		nintendo_img6_1.style.zIndex = "1";
+		return indexSlide = 0;
+	}, 3000)
+
+	
+	}
+
+	console.log(indexSlide)
+	indexSlide++
+}
+
+setInterval(imageSlide, 8000)
