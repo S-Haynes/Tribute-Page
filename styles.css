@@ -405,7 +405,7 @@ div #nintendo-img1 , div #nintendo-img6 {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: flex 0.8s linear;
+	transition: flex 0.5s linear;
 }
 
 #go_1:hover{
@@ -417,7 +417,7 @@ div #nintendo-img1 , div #nintendo-img6 {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: flex 0.8s linear;
+	transition: flex 0.5s linear;
 	
 	
 }
@@ -431,7 +431,7 @@ div #nintendo-img1 , div #nintendo-img6 {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: flex 0.8s linear;
+	transition: flex 0.5s linear;
 }
 
 #stay_1:hover{
@@ -444,7 +444,7 @@ div #nintendo-img1 , div #nintendo-img6 {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	transition: flex 0.8s linear;
+	transition: flex 0.5s linear;
 }
 
 #stay_2:hover {
