@@ -165,3 +165,221 @@ function imageSlide(){
 }
 
 setInterval(imageSlide, 8000)
+
+window.sr = ScrollReveal();
+
+sr.reveal('#nintendo-img2', {
+	duration: 2000,
+	delay: 500,
+	origin: 'right',
+	distance: '300px',
+});
+
+sr.reveal('#nintendo-img3', {
+	duration: 2000,
+	delay: 1000,
+	origin: 'right',
+	distance: '300px',
+});
+sr.reveal('#nintendo-img4', {
+	duration: 2000,
+	delay: 1000,
+	origin: 'left',
+	distance: '300px',
+});
+
+sr.reveal('#nintendo-img5', {
+	duration: 2000,
+	delay: 500,
+	origin: 'left',
+	distance: '300px',
+});
+
+sr.reveal('#nintendo-img6', {
+	duration: 2000,
+	origin: 'left',
+	distance: '300px',
+});
+
+sr.reveal('#babyBlue', {
+	duration: 1000,
+});
+
+sr.reveal('#play_font', {
+	duration: 1000,
+	delay: 500,
+});
+
+sr.reveal('#red', {
+	duration: 1000,
+	delay: 1000,
+});
+
+sr.reveal('#png_container_1', {
+	duration: 6000,
+	origin: 'right',
+	distance:'500px',
+
+	
+});
+
+sr.reveal('#zeldaAndLink_1', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+	
+});
+sr.reveal('#stay_1', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+
+	
+});
+
+sr.reveal('#go_1', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+	
+	
+});
+
+sr.reveal('#stay_2', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+
+});
+
+sr.reveal('#go_2', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+	
+});
+
+sr.reveal('.images_footer_1', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+	
+});
+
+sr.reveal('.images_footer_2', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+
+});
+
+sr.reveal('#nintendo-controller img', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+	delay: 500,		
+});
+
+
+sr.reveal('#logo_img', {
+	duration: 1000,
+	origin: 'left',
+	distance:'300px',	
+	delay: 500,	
+});
+
+sr.reveal('#playstation_img1', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+
+});
+
+sr.reveal('#playstation_img2', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+
+});
+
+sr.reveal('#playstation_img3', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+
+});
+
+sr.reveal('#playstation_img4', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+	
+});
+
+sr.reveal('.video_text1', {
+	duration: 2000,	
+});
+
+sr.reveal('.video_text2', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+	
+});
+
+sr.reveal('#ps4_console_img', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+	
+});
+
+sr.reveal('#psp_video_image', {
+	duration: 3000,
+	origin: 'top',
+	distance:'1000px',
+	
+});
+
+sr.reveal('#psp_container', {
+	duration: 3000,
+	origin: 'top',
+	distance:'1000px',
+});
+
+sr.reveal('#gaming-made-easy', {
+	duration: 2000,
+	origin: 'bottom',
+	distance:'300px',
+	
+});
+
+sr.reveal('#scrolling-bg', {
+	duration: 1000,
+	origin: 'top',
+	distance:'300px',
+	
+});
+
+sr.reveal('#choice-playstation', {
+	duration: 2000,
+	origin: 'left',
+	distance:'300px',
+	
+});
+
+sr.reveal('#choice-nintendo', {
+	duration: 2000,
+	origin: 'right',
+	distance:'300px',
+	
+});
+
+
+
+
+
+
+
+
+

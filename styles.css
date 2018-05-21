@@ -782,23 +782,51 @@ flex: 3;
 #playstation-video video{
 min-width: 100%;
 min-height: 100%;
-
 }
+
+#psp-video {
+	position: relative;
+	height: 1000px;
+	width: 100%;
+}
+
+
 #psp_container {
 	position: absolute;
-	height: 48%;
+	height: 1200px;
 	width: 52%;
-	top: 37%;
+	top: 35px;
 	left: 24%;
+	
 
 }
+
 #psp_vid_content {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	top: 28%;
+	width: 100.5%;
+	height: 40.5%;
 	overflow: hidden;
 	
 }
+
+
+#ps4_console_img {
+	width: 800px;
+	height: 800px;
+	position: absolute;
+	top: -680px;
+	left: 100px;
+	z-index: 2;
+}
+
+#psp_video_image {
+	position: relative;
+	bottom: -35px;
+	height:1200px;
+	width: 100%;
+}
+
 
 
 #gaming-made-easy {
@@ -879,27 +907,6 @@ min-height: 100%;
 	font-weight: 800;
 }
 
-#psp-video {
-	position: relative;
-	height: 1000px;
-	width: 100%;
-}
-
-#ps4_console_img {
-	width: 800px;
-	height: 800px;
-	position: absolute;
-	top: -680px;
-	left: 100px;
-	z-index: 2;
-}
-
-#psp_video_image {
-	position: relative;
-	bottom: -35px;
-	height:1200px;
-	width: 100%;
-}
 
 #console-clash {
 	display: flex;
