@@ -24,7 +24,7 @@ let indexHero = 0;
 let indexImage = 0;
 let indexCurtain = 0;
 let $section1 = $('#nintendo-img2');
-let $section2 = $('#choice-nintendo');
+let $section2 = $('#ps4_console_img');
 
 
 let arr = [	
@@ -100,7 +100,7 @@ function imageSwitch(){
 imageSwitch();
 
 // setInterval(imageSlide, 8000);
-// setInterval(imageSwitch, 7000);
+setInterval(imageSwitch, 7000);
 
 function imageSlide(){
 
@@ -164,25 +164,15 @@ function imageSlide(){
 }
 
   $(document).bind('scroll', function(ev) {
-        var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section1.offset().top - window.innerHeight;
+        let scrollOffset = $(document).scrollTop();
+        let containerOffset = $section1.offset().top - window.innerHeight;
         if (scrollOffset > containerOffset) {
-        	setTimeout(imageSlide, 2000);
+        	setTimeout(imageSlide, 3000);
             setInterval(imageSlide, 8000);
-             $(document).unbind('scroll');
+             $(document).off('scroll');
         }
   });
 
-   $(document).bind('scroll', function(ev) {
-        var scrollOffset = $(document).scrollTop();
-        var containerOffset = $section2.offset().top - window.innerHeight;
-        if (scrollOffset > containerOffset) {
-            setInterval(imageSwitch, 7000);
-             $(document).unbind('scroll');
-        }
-  });
-    
-    
 
 
 sr.reveal('#nintendo-img2', {
