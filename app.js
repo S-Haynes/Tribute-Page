@@ -1,3 +1,4 @@
+window.sr = ScrollReveal();
 let header = document.querySelector('#header-bg');
 let curtain = document.querySelector('#curtain');
 let psp = document.querySelector("#psp_vid_content");
@@ -22,6 +23,8 @@ let indexSlide = 0;
 let indexHero = 0;
 let indexImage = 0;
 let indexCurtain = 0;
+let $section1 = $('#nintendo-img2');
+let $section2 = $('#choice-nintendo');
 
 
 let arr = [	
@@ -96,9 +99,8 @@ function imageSwitch(){
 
 imageSwitch();
 
-
-setInterval(imageSwitch, 7000);
-
+// setInterval(imageSlide, 8000);
+// setInterval(imageSwitch, 7000);
 
 function imageSlide(){
 
@@ -158,37 +160,51 @@ function imageSlide(){
 	
 	}
 
-	console.log(indexSlide)
 	indexSlide++
 }
 
-setInterval(imageSlide, 8000)
+  $(document).bind('scroll', function(ev) {
+        var scrollOffset = $(document).scrollTop();
+        var containerOffset = $section1.offset().top - window.innerHeight;
+        if (scrollOffset > containerOffset) {
+        	setTimeout(imageSlide, 2000);
+            setInterval(imageSlide, 8000);
+             $(document).unbind('scroll');
+        }
+  });
 
-window.sr = ScrollReveal();
+   $(document).bind('scroll', function(ev) {
+        var scrollOffset = $(document).scrollTop();
+        var containerOffset = $section2.offset().top - window.innerHeight;
+        if (scrollOffset > containerOffset) {
+            setInterval(imageSwitch, 7000);
+             $(document).unbind('scroll');
+        }
+  });
+    
+    
+
 
 sr.reveal('#nintendo-img2', {
 	duration: 2000,
-	delay: 500,
 	origin: 'right',
 	distance: '300px',
 });
 
 sr.reveal('#nintendo-img3', {
 	duration: 2000,
-	delay: 1000,
 	origin: 'right',
 	distance: '300px',
 });
 sr.reveal('#nintendo-img4', {
 	duration: 2000,
-	delay: 1000,
 	origin: 'left',
 	distance: '300px',
 });
 
 sr.reveal('#nintendo-img5', {
 	duration: 2000,
-	delay: 500,
+	
 	origin: 'left',
 	distance: '300px',
 });
