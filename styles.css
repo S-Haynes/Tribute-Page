@@ -10,6 +10,7 @@
 body {
 	height: 100%;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 html {
@@ -19,9 +20,9 @@ html {
 
 h1 {
 	color: white;
-	font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(48px + (48 - 48) * ((100vw - 300px) / (1600 - 300)));
 	text-transform: uppercase;
-	letter-spacing: 1px
+	letter-spacing: 1px;
 	font-weight: 800;
 }
 
@@ -32,17 +33,17 @@ hr{
 	background-color: #fff;
 	border: none;
 	height: 1px;
-
 	min-width: 100%;  
 }
+
 
 .header-container {
 	position: absolute;
 	top: 30%;
 	width: 100%;
 	text-align: center;
-	font-family: 'Press Start 2P', cursive;
-	text-shadow: 10px 10px #232323;
+	font-family: 'Press Start 2P';
+	text-shadow: 7px 7px #232323;
 	opacity: 0.7;
 }
 
@@ -75,16 +76,18 @@ div #nintendo-img1 , div #nintendo-img6 {
 }
 
 .nintendo-text {
+	font-family: Teko;
 	flex: 1;
 	width: 100%;
 	color: white;
-	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(48px + (72 - 48) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .design-text {
+	font-family: Teko;
 	width: 100%;
 	background: #EC5656;
-	font-size: calc(16px + (36 - 16) * ((100vw - 300px) / (1600 - 300)));;
+	font-size: calc(32px + (50 - 32) * ((100vw - 300px) / (1600 - 300)));;
 	color: white;
 	padding: 30px;
 	margin: 0 10px 10px 10px;
@@ -371,9 +374,11 @@ div #nintendo-img1 , div #nintendo-img6 {
 
 }
 .images_footer_1 {
+	font-family: Teko;
 	color: white;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 36px;
+	letter-spacing: 1px;
 	text-align: center;
 	background: #3946A0;
 	padding: 20px;
@@ -382,15 +387,17 @@ div #nintendo-img1 , div #nintendo-img6 {
 }
 
 .images_footer_2 {
+	font-family: Teko;
 	color: white;
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 36px;
 	text-align: center;
 	background: #DA4557;
 	padding: 20px;
 	margin: 0 10px 0 10px;
 	width: 100%;
 	z-index: 3;
+	letter-spacing: 1px;
 }
 
 #go_1 {
@@ -477,7 +484,7 @@ flex: 3;
 #nintendo-wire {
 	position: absolute;
 	z-index: 2;
-	top: 1170px;
+	top: 1320px;
 	left: -500px;
 	transform: rotate(2deg);
 	border: none;
@@ -561,37 +568,30 @@ flex: 3;
 	text-shadow: 4px 4px #474747;
 }
 
-#babyBlue {
-	color: #7CF7F3;
-	font-size: 72px;
-	text-shadow: 10px 10px #232323;
-}
-
 #curtain {
 	width: 100%;
 	height: 100%;
-	background: rgb(218,69,87);
+	background: #FF2C2C;
 	z-index: 5;
 	transition: all 1s;
 }
 
 
 #red {
-	font-size: 124px;
-	color: #EC5656;
+	color: #FF2C2C;
 	text-shadow: 10px 10px #232323;
 }
 
 #nintendo {
-	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(24px + (24 - 24) * ((100vw - 300px) / (1600 - 300)));
 	color: #EC5656;
-	text-shadow: 8px 8px #232323;
+	text-shadow: 3px 3px #232323;
 }
 
 
 #playstation {
-	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
-	text-shadow: 8px 8px #232323;
+	font-size: calc(24px + (24 - 24) * ((100vw - 300px) / (1600 - 300)));
+	text-shadow: 3px 3px #232323;
 	color: #09A7E9;
 }
 
@@ -668,10 +668,19 @@ flex: 3;
 
 .overlay_container {
 	font-family: Teko;
-	font-size: 72px;
+	font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300)));
+	text-shadow: 3px 3px #232323;
+	color: white;
 	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: 1px
+	letter-spacing: 1px;
+	line-height: 0.8;
+	padding-top: 130px;
+}
+
+.span-font {
+	font-size: calc(60px + (200 - 60) * ((100vw - 300px) / (1600 - 300)));
+	text-shadow: 7px 7px #232323;
 }
 
 #png_container_1 {
@@ -786,7 +795,7 @@ min-height: 100%;
 
 #psp-video {
 	position: relative;
-	height: 1000px;
+	height: 1400px;
 	width: 100%;
 }
 
@@ -807,7 +816,6 @@ min-height: 100%;
 	width: 100.5%;
 	height: 40.5%;
 	overflow: hidden;
-	
 }
 
 
@@ -879,12 +887,12 @@ min-height: 100%;
 
 .video_slogan {
 	line-height: 1.0;
-	font-size: calc(36px + (72 - 36) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(24px + (72 - 24) * ((100vw - 300px) / (1600 - 300)));
 }
 
 #video_slogan2 {
 	line-height: 1.0;
-	font-size: calc(36px + (124 - 36) * ((100vw - 300px) / (1600 - 300)));
+	font-size: calc(30px + (124 - 30) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .container #ps4 {
@@ -955,14 +963,16 @@ min-height: 100%;
 }
 
 #pick-your-side {
-	font-size: 72px;
+	font-family: Teko;
+	font-size: calc(16px + (72 - 16) * ((100vw - 300px) / (1600 - 300)));
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
 	color: white;
 	letter-spacing: 2px;
 	position: relative;
-	flex: 1;
+	top: -400px;
+	/*flex: 1;*/
 	margin: auto;
 	z-index: 3;
 
@@ -972,7 +982,7 @@ min-height: 100%;
 #choice-playstation {
 	display: flex;
 	flex-direction: column;
-	flex: 2.5;
+	flex: 5;
 	padding-top: 20px;
 	z-index: 10;
 	
@@ -981,7 +991,7 @@ min-height: 100%;
 #choice-nintendo {
 	z-index: 10;
 	display: flex;
-	flex: 2.5;
+	flex: 5;
 	flex-direction: column;
 	margin:;
 }
@@ -994,7 +1004,7 @@ min-height: 100%;
 
 #playstation_hero {
 	display: flex;
-	flex: 1;
+	flex: 10;
 	
 }
 
@@ -1007,7 +1017,7 @@ min-height: 100%;
 
 #nintendo_hero {
 	display: flex;
-	flex: 1;
+	flex: 10;
 }
 
 div .n-hero {
@@ -1107,7 +1117,7 @@ div .p-hero {
 	height: 100%;
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/4ebe241807b3b713a8119197d3cc474e-full.png);
 	background-repeat: no-repeat;
-	background-position: 0 -180px;
+	background-position: 0 -140px;
 	background-size: 100% 120%;
 }
 
@@ -1118,12 +1128,27 @@ div .p-hero {
 	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/49f0d415f5dbcfd58e114798ff386caa-full.png);
 /*	background: url(https://cdn1.imggmi.com/uploads/2018/5/17/3e47572c546157897bdaab2df0cc4af3-full.png);*/
 	background-repeat: no-repeat;
-	background-position: 0 350px;
+	background-position: 0 250px;
 	background-size: 100% 60%;
 }
 
 .hidden {
 	display: none;
+}
+
+#footnote {
+	width: 100%;
+	min-height: 75px;
+	text-align: left;
+	font-weight: 400;
+	font-family: Teko;
+	font-size: 32px;
+	letter-spacing: 1px;
+	color: white;
+	background: #FF2C2C;
+	box-sizing: border-box;
+	padding-top: 10px;
+	padding-left: 10%;
 }
 
 @media (max-width: 1350px){
@@ -1140,6 +1165,10 @@ div .p-hero {
 #text-container {
 	font-size: 24px;
 }
+
+.end-logo {
+	display: none;
+}
 }
 
 @media(max-width: 1000px){
@@ -1147,6 +1176,11 @@ div .p-hero {
 #choice-playstation {
 	display: none;
 }	
+
+#pick-your-side {
+	display: none;
+}
+
 
 #png_container_1 img {
 	display: none;

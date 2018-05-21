@@ -53,12 +53,10 @@ sliderImage();
 function sliderCurtain(){
 	if(indexCurtain === 0){
 		curtain.style.height = "0%";
-		curtain.style.background = "steelblue";
 		bgSize();
 		indexCurtain++;
 	} else if(indexCurtain === 1){
 		curtain.style.height = "100%";
-		curtain.style.background = "rgb(218,69,87)";
 		indexCurtain = 0;
 		setTimeout(sliderImage, 2000);
 
@@ -202,7 +200,7 @@ sr.reveal('#nintendo-img6', {
 });
 
 sr.reveal('#babyBlue', {
-	duration: 1000,
+	duration: 2000,
 });
 
 sr.reveal('#play_font', {
@@ -210,8 +208,8 @@ sr.reveal('#play_font', {
 	delay: 500,
 });
 
-sr.reveal('#red', {
-	duration: 1000,
+sr.reveal('.span-font', {
+	duration: 2000,
 	delay: 1000,
 });
 
@@ -355,7 +353,7 @@ sr.reveal('#gaming-made-easy', {
 });
 
 sr.reveal('#scrolling-bg', {
-	duration: 1000,
+	duration: 2000,
 	origin: 'top',
 	distance:'300px',
 	
