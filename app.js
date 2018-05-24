@@ -7,7 +7,7 @@ let nhero = document.querySelectorAll(".n-hero");
 let nintendo_img2 = document.querySelector('#nintendo-img2');
 let nintendo_img2_1 = document.querySelector('#nintendo-img2-1');
 let nintendo_img2_2 = document.querySelector('#nintendo-img2-2');
-let nintendo_img3 = document.querySelector('#nintendo-img3');
+// let nintendo_img3 = document.querySelector('#nintendo-img3');
 let nintendo_img3_1 = document.querySelector('#nintendo-img3-1');
 let nintendo_img3_2 = document.querySelector('#nintendo-img3-2');
 let nintendo_img4 = document.querySelector('#nintendo-img4');
@@ -40,6 +40,45 @@ let arr = [
 
 
 
+function backgroundSlide() {
+  if(indexCurtain === 0){
+   header.style.zIndex = "1";
+   curtain.style.zIndex = "2";
+   setTimeout(function(){
+     curtain.style.height = "980px";
+   }, 1500)
+      setTimeout(function(){
+       header.style.transform = "translateY(-100%)"
+   }, 2000)
+    
+   indexCurtain++;
+  } else if(indexCurtain === 1){
+    sliderImage();
+
+   setTimeout(function(){
+     header.style.transform = "translateY(0%)"
+     curtain.style.transform = "translateY(100%)";
+    }, 1000)
+    setTimeout(function(){
+    bgSize();
+    curtain.style.zIndex = "-1";
+    header.style.zIndex = "2";
+    }, 1200)
+ 
+   setTimeout(function(){
+    curtain.style.transform = "translateY(0%)";
+    curtain.style.height = "0px";
+   
+   }, 2000)
+    indexCurtain = 0;
+  }
+  
+}
+
+backgroundSlide();
+setInterval(backgroundSlide, 3000);
+
+
 function sliderImage(){
 	if(indexImage === arr.length){
 		indexImage = 0;
@@ -48,32 +87,19 @@ function sliderImage(){
 		header.style.backgroundSize = "150% 150%";
 		header.style.backgroundPosition = "center";
 		header.style.backgroundRepeat = "no-repeat";	
+   
 		indexImage++;
 }
 
-sliderImage();
-
-function sliderCurtain(){
-	if(indexCurtain === 0){
-		curtain.style.height = "0%";
-		bgSize();
-		indexCurtain++;
-	} else if(indexCurtain === 1){
-		curtain.style.height = "100%";
-		indexCurtain = 0;
-		setTimeout(sliderImage, 2000);
-
-	}
-}
-
-
-setTimeout(sliderCurtain, 1000)
-
-setInterval(sliderCurtain, 3500)
 
 function bgSize(){
 	header.style.backgroundSize = "100% 100%";
+
 }
+
+
+
+
 
 
 function imageSwitch(){
