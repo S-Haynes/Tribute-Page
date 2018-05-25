@@ -1,24 +1,13 @@
-window.sr = ScrollReveal();
+window.sr = ScrollReveal({
+	mobile: true,
+});
 let header = document.querySelector('#header-bg');
 let curtain = document.querySelector('#curtain');
 let psp = document.querySelector("#psp_vid_content");
 let phero = document.querySelectorAll(".p-hero");
 let nhero = document.querySelectorAll(".n-hero");
-let nintendo_img2 = document.querySelector('#nintendo-img2');
-let nintendo_img2_1 = document.querySelector('#nintendo-img2-1');
-let nintendo_img2_2 = document.querySelector('#nintendo-img2-2');
-// let nintendo_img3 = document.querySelector('#nintendo-img3');
-let nintendo_img3_1 = document.querySelector('#nintendo-img3-1');
-let nintendo_img3_2 = document.querySelector('#nintendo-img3-2');
-let nintendo_img4 = document.querySelector('#nintendo-img4');
-let nintendo_img4_1 = document.querySelector('#nintendo-img4-1');
-let nintendo_img4_2 = document.querySelector('#nintendo-img4-2');
-let nintendo_img5 = document.querySelector('#nintendo-img5');
-let nintendo_img5_1 = document.querySelector('#nintendo-img5-1');
-let nintendo_img5_2 = document.querySelector('#nintendo-img5-2');
-let nintendo_img6 = document.querySelector('#nintendo-img6');
-let nintendo_img6_1 = document.querySelector('#nintendo-img6-1');
-let nintendo_img6_2 = document.querySelector('#nintendo-img6-2');
+let n_first_image = document.querySelectorAll('.n-first-image');
+let n_second_image = document.querySelectorAll('.n-second-image');
 let indexSlide = 0;
 let indexHero = 0;
 let indexImage = 0;
@@ -37,8 +26,6 @@ let arr = [
 			"http://sm.ign.com/ign_in/review/s/sea-of-thi/sea-of-thieves-review_uxtb.jpg", // sea of thieves gameplay
 			"https://c.wallhere.com/photos/21/4d/video_games_DualShock_PlayStation_4_controllers_500px_DualShock_4-1297453.jpg!d",
 ]
-
-
 
 function backgroundSlide() {
   if(indexCurtain === 0){
@@ -83,7 +70,7 @@ function sliderImage(){
 	if(indexImage === arr.length){
 		indexImage = 0;
 	}
-		header.style.background = "url(" + arr[indexImage] + ")"
+		header.style.background = "url('" + arr[indexImage] + "')"
 		header.style.backgroundSize = "150% 150%";
 		header.style.backgroundPosition = "center";
 		header.style.backgroundRepeat = "no-repeat";	
@@ -97,96 +84,84 @@ function bgSize(){
 
 }
 
-
-
-
-
-
 function imageSwitch(){
 	if(indexHero === phero.length){
 		indexHero = 0;
 	} 
 		
 		for(var i = 0; i < phero.length; i++){
-		// phero[i].classList.add('hidden');
-		// nhero[i].classList.add('hidden');
 		$(".p-hero:eq(" + i + ")").hide();
 		$(".n-hero:eq(" + i + ")").hide();
 	}
 
-		$(".p-hero:eq(" + indexHero + ")").fadeIn(1000);
-		$(".n-hero:eq(" + indexHero + ")").fadeIn(1000);
-		// phero[indexHero].classList.remove('hidden');
-		// nhero[indexHero].classList.remove('hidden');
-		return indexHero++
-		
-		
+		$(".p-hero:eq('" + indexHero + "')").fadeIn(1000);
+		$(".n-hero:eq('" + indexHero + "')").fadeIn(1000);
+		return indexHero++		
 }
 
 imageSwitch();
 
-// setInterval(imageSlide, 8000);
 setInterval(imageSwitch, 7000);
 
 function imageSlide(){
 
 	if(indexSlide === 0){
-	nintendo_img2_1.style.width = "0%";
-	nintendo_img3_1.style.width = "0%";
-	nintendo_img4_1.style.width = "0%";
-	nintendo_img5_1.style.width = "0%";
-	nintendo_img6_1.style.width = "0%";
+		removeFirstImageWidth()
 
 	setTimeout(function(){
-		nintendo_img2_1.style.width = "100%";
-		nintendo_img3_1.style.width = "100%";
-		nintendo_img4_1.style.width = "100%";
-		nintendo_img5_1.style.width = "100%";
-		nintendo_img6_1.style.width = "100%";
-		nintendo_img2_1.style.zIndex = "-1";
-		nintendo_img3_1.style.zIndex = "-1";
-		nintendo_img4_1.style.zIndex = "-1";
-		nintendo_img5_1.style.zIndex = "-1";
-		nintendo_img6_1.style.zIndex = "-1";
-		nintendo_img2_2.style.zIndex = "1";
-		nintendo_img3_2.style.zIndex = "1";
-		nintendo_img4_2.style.zIndex = "1";
-		nintendo_img5_2.style.zIndex = "1";
-		nintendo_img6_2.style.zIndex = "1";
-	
+		addFirstImageWidth();
+		hideFirstImage();
 	}, 3000)
 	}
 
 	if(indexSlide === 1){
-	// nintendo_img2_1.style.backgroundSize = "125.6% 100%";
-	nintendo_img2_2.style.width = "0%";
-	nintendo_img3_2.style.width = "0%";
-	nintendo_img4_2.style.width = "0%";
-	nintendo_img5_2.style.width = "0%";
-	nintendo_img6_2.style.width = "0%";
+	removeSecondImageWidth();
 	setTimeout(function(){
-		nintendo_img2_2.style.zIndex = "-1";
-		nintendo_img3_2.style.zIndex = "-1";
-		nintendo_img4_2.style.zIndex = "-1";
-		nintendo_img5_2.style.zIndex = "-1";
-		nintendo_img6_2.style.zIndex = "-1";
-		nintendo_img2_2.style.width = "100%";
-		nintendo_img3_2.style.width = "100%";
-		nintendo_img4_2.style.width = "100%";
-		nintendo_img5_2.style.width = "100%";
-		nintendo_img6_2.style.width = "100%";
-		nintendo_img2_1.style.zIndex = "1";
-		nintendo_img3_1.style.zIndex = "1";
-		nintendo_img4_1.style.zIndex = "1";
-		nintendo_img5_1.style.zIndex = "1";
-		nintendo_img6_1.style.zIndex = "1";
+		hideSecondImage();
+		addSecondImageWidth()
 		return indexSlide = 0;
-	}, 3000)
-
-	
+	}, 3000)	
 	}
 
 	indexSlide++
+}
+
+function hideFirstImage(){
+	for(var i = 0; i < n_first_image.length; i++){
+		n_first_image[i].style.zIndex = "-1";
+		n_second_image[i].style.zIndex = "1";
+	}
+}
+
+function hideSecondImage(){
+		for(var i = 0; i < n_first_image.length; i++){
+		n_first_image[i].style.zIndex = "1";
+		n_second_image[i].style.zIndex = "-1";
+	}
+}
+
+function removeFirstImageWidth(){
+		for(var i = 0; i < n_first_image.length; i++){
+		n_first_image[i].style.width = "0%";
+	}
+}
+
+function addFirstImageWidth(){
+	for(var i = 0; i < n_first_image.length; i++){
+		n_first_image[i].style.width = "100%";
+	}
+}
+
+function removeSecondImageWidth(){
+		for(var i = 0; i < n_first_image.length; i++){
+		n_second_image[i].style.width = "0%";
+	}
+}
+
+function addSecondImageWidth(){
+	for(var i = 0; i < n_first_image.length; i++){
+		n_second_image[i].style.width = "100%";
+	}
 }
 
   $(document).bind('scroll', function(ev) {
@@ -198,8 +173,6 @@ function imageSlide(){
              $(document).off('scroll');
         }
   });
-
-
 
 sr.reveal('#nintendo-img2', {
 	duration: 2000,
