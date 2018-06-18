@@ -1,3 +1,5 @@
+window.addEventListener('load', function(){
+
 window.sr = ScrollReveal({
 	mobile: true,
 });
@@ -378,11 +380,5 @@ sr.reveal('#choice-nintendo', {
 	
 });
 
-
-
-
-
-
-
-
+})
 
